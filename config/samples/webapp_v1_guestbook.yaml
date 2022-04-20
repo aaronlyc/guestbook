@@ -1,0 +1,6 @@
+apiVersion: webapp.example.org/v1
+kind: Guestbook
+metadata:
+  name: guestbook-sample
+spec:
+  # Add fields here

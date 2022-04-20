@@ -1,0 +1,6 @@
+apiVersion: test1.example.org/v2
+kind: Guest1
+metadata:
+  name: guest1-sample
+spec:
+  # Add fields here

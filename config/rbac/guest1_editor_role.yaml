@@ -1,0 +1,24 @@
+# permissions for end users to edit guest1s.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: guest1-editor-role
+rules:
+- apiGroups:
+  - test1.example.org
+  resources:
+  - guest1s
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - test1.example.org
+  resources:
+  - guest1s/status
+  verbs:
+  - get
